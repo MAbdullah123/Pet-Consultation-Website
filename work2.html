@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+                body {
+                        margin: 0px;
+                        padding: 0px;
+                        box-sizing: border-box;
+                }
+
+                .navBar {
+                        height: 100px;
+                        width: 100%;
+                        border: 1px solid black;
+                        background-color: #daac00;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+
+                }
+
+                .banner {
+                        height: 400px;
+                        width: 100%;
+                        border: 1px solid black;
+                        background-color: #fcc302;
+                        display: flex;
+                }
+
+                .ourServices {
+                        height: 400px;
+                        width: 100%;
+                        border: 1px solid black;
+
+                }
+
+                .para {
+                        position: relative;
+                        bottom: -30px;
+                        left: 30px;
+
+                }
+
+                .good {
+                        padding: 10px 30px;
+                        text-align: center;
+                        background-color: #fcc302;
+                        color: white;
+                        border-radius: 10px;
+                        border: none;
+                        margin-left: 20px;
+                        position: relative;
+                        bottom: -30px;
+                        left: 30px
+                }
+
+                .title {
+                        height: 400px;
+                        width: 100%;
+                        border: 1px solid black;
+                        background-color: #fcc302;
+
+                }
+
+                .decor {
+                        color: white;
+                }
+
+                .great {
+                        color: black;
+                }
+
+
+                .loverAnimal {
+                        height: 400px;
+                        width: 100%;
+                        border: 1px solid black;
+                }
+
+                .sale {
+                        height: 400px;
+                        width: 100%;
+                        border: 1px solid black;
+                        background-color: #fcc302;
+
+                }
+
+                .team {
+                        height: 400px;
+                        width: 100%;
+                        border: 1px solid black;
+                }
+
+                .clients {
+                        height: 400px;
+                        width: 100%;
+                        border: 1px solid black;
+                        background-color: #fcc302;
+
+                }
+
+                .posts {
+                        height: 400px;
+                        width: 100%;
+                        border: 1px solid black;
+                }
+
+                .footer {
+                        height: 400px;
+                        width: 100%;
+                        border: 1px solid black;
+                        background-color: #343434;
+
+                }
+
+                .bannerText {
+                        height: 300px;
+                        width: 50%;
+
+                        position: relative;
+                        top: 30px;
+                        left: 50px;
+                }
+
+                .bannerHeading {
+                        font-family: Poppins;
+                        color: white;
+                }
+
+                .bannerPara {
+                        font-family: Poppins;
+                        color: white;
+                }
+
+                .activeButton {
+                        padding: 8px 25px;
+                        text-align: center;
+                        background-color: #00bec9;
+                        color: white;
+                        border-radius: 5px;
+                        border: none;
+                        margin-left: 20px;
+                }
+
+                .PButton {
+                        padding: 8px 25px;
+                        text-align: center;
+                        background-color: #fcc302;
+                        color: white;
+                        border-radius: 5px;
+                        border: 1px solid white;
+                }
+
+                .bannerimg {
+                        position: relative;
+                        left: 200px;
+                }
+
+                .tilt {
+                        transform: scaleX(-1);
+                }
+
+                .img20 {
+                        position: relative;
+                        bottom: 130px;
+                        left: 800px;
+                }
+
+                .pic {
+                        position: relative;
+                        bottom: 0px;
+                        left: 200px;
+                }
+
+                .pic1 {
+                        position: relative;
+                        bottom: 200px;
+                        left: 500px;
+                }
+
+                .pic2 {
+                        position: relative;
+                        bottom: 400px;
+                        left: 800px;
+                }
+
+                .img {
+                        position: relative;
+                        bottom: 0px;
+                        left: 100px;
+                }
+
+                .sent {
+                        position: relative;
+                        bottom: 300px;
+                        left: 550px;
+                        width: 600px;
+                }
+
+                .best {
+                        padding: 10px 30px;
+                        text-align: center;
+                        background-color: #fcc302;
+                        color: white;
+                        border-radius: 10px;
+                        border: none;
+                        margin-left: 20px;
+                        position: relative;
+                        bottom: 300px;
+                        left: 900px;
+                }
+
+                .dd {
+                        color: white;
+                        position: relative;
+                        bottom: 0px;
+
+                }
+
+                .img1 {
+                        position: relative;
+                        bottom: -10px;
+                        left: 200px;
+
+                }
+
+                .img2 {
+                        position: relative;
+                        bottom: 190px;
+                        left: 500px;
+
+                }
+
+                .img3 {
+                        position: relative;
+                        bottom: 400px;
+                        left: 800px;
+
+                }
+
+                .q {
+                        padding: 10px 30px;
+                        text-align: center;
+                        background-color: #00bec9;
+                        color: white;
+                        border-radius: 10px;
+                        border: none;
+                        margin-left: 20px;
+                        position: relative;
+                        bottom: -420px;
+                        left: 200px;
+
+                }
+
+                .p {
+                        padding: 10px 30px;
+                        text-align: center;
+                        background-color: #00bec9;
+                        color: white;
+                        border-radius: 10px;
+                        border: none;
+                        margin-left: 20px;
+                        position: relative;
+                        bottom: -420px;
+                        left: 680px;
+                }
+
+                .r {
+                        padding: 10px 30px;
+                        text-align: center;
+                        background-color: #00bec9;
+                        color: white;
+                        border-radius: 10px;
+                        border: none;
+                        margin-left: 20px;
+                        position: relative;
+                        bottom: -420px;
+                        left: 250px;
+                }
+
+                .a {
+                        position: relative;
+                        bottom: 0px;
+                        left: 200px;
+
+                }
+
+                .b {
+                        position: relative;
+                        bottom: 195px;
+                        left: 500px;
+                }
+
+                .c {
+                        position: relative;
+                        bottom: 405px;
+                        left: 800px;
+
+                }
+
+                .name1 {
+                        position: relative;
+                        bottom: 400px;
+                        left: 200px;
+                        color: black;
+
+                }
+
+                .name2 {
+                        position: relative;
+                        bottom: 450px;
+                        left: 500px;
+                        color: black;
+
+                }
+
+                .name3 {
+                        position: relative;
+                        bottom: 500px;
+                        left: 800px;
+                        color: black;
+
+                }
+
+                .t {
+                        position: relative;
+                        bottom: 0px;
+                        left: 200px;
+
+
+                }
+
+                .f {
+                        position: relative;
+                        bottom: 195px;
+                        left: 500px;
+
+                }
+
+                .g {
+                        position: relative;
+                        bottom: 405px;
+                        left: 800px;
+
+                }
+
+                .name4 {
+                        position: relative;
+                        bottom: 300px;
+                        left: 200px;
+                        color: white;
+
+                }
+
+                .name5 {
+                        position: relative;
+                        bottom: 350px;
+                        left: 500px;
+                        color: white;
+
+                }
+
+                .name6 {
+                        position: relative;
+                        bottom: 405px;
+                        left: 800px;
+                        color: white;
+
+                }
+
+                .s {
+                        position: relative;
+                        bottom: 00px;
+                        left: 200px;
+
+                }
+
+                .d {
+                        position: relative;
+                        bottom: 210px;
+                        left: 500px;
+
+                }
+
+                .j {
+                        position: relative;
+                        bottom: 405px;
+                        left: 800px;
+
+                }
+
+                .z {
+                        position: relative;
+                        bottom: 0px;
+                        left: 200px;
+                        color: white;
+                }
+
+                .y {
+                        position: relative;
+                        bottom: 330px;
+                        left: 500px;
+                        color: white;
+                }
+
+                .x {
+                        position: relative;
+                        bottom: 650px;
+                        left: 900px;
+                        color: white;
+                }
+
+                .net {
+                        position: relative;
+                        bottom: 620px;
+                        left: 900px;
+
+
+                }
+
+                .center {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                        overflow: hidden;
+                        background-color: #daac00;
+
+                }
+
+                .center li a:hover {
+                        color: white;
+                        font-size: 30px;
+                }
+
+                .center li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 20px;
+                        text-decoration: none;
+                }
+
+                .center li {
+                        float: left
+                }
+                
+        </style>
+</head>
+
+<body>
+        <div class="main">
+                <div class="navBar">
+                        <div class="left">
+                                <img src="logo.png" alt="Logo Not Found" height="80px" width="200px">
+                        </div>
+                        <div class="center">
+                                <ul>
+                                        <li><a href="">Home</a> </li>
+                                        <li><a href="">About Us</a> </li>
+                                        <li><a href="">Our Services</a> </li>
+                                        <li><a href="">Contact US</a> </li>
+                                </ul>
+                        </div>
+                        <div class="right">
+                                <form class="example" action="action_page.php">
+                                        <input type="text" placeholder="Search.." name="search">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                        </div>
+                </div>
+                <div class="banner">
+                        <div class="bannerText">
+                                <h1 class="bannerHeading">
+                                        First I wanted to be a veterinarian
+                                </h1>
+
+                                <p class="bannerPara">
+                                        Lorem Ipsum available but the majority have
+                                        suffered alteration in some form, by injected
+                                        humour randomised words.
+                                </p>
+
+                                <button class="activeButton">contact us</button>
+                                <button class="PButton">our services</button>
+
+
+                        </div>
+                        <div class="bannerimg">
+                                <img src="dog.png" class="tilt" alt="Image Not FOund" height="400px" width="300px">
+                        </div>
+                </div>
+                <div class="ourServices">
+                        <div class="para">
+                                <h1>As a veterinarian and lover of animals.</h1>
+                                <p>Lorem Ipsum available but the majority have
+                                        suffered alteration in some form, by injected
+                                        humour randomised words.</p>
+                        </div>
+                        <button class="good">Our Services</button>
+                        <div class="img20">
+                                <img src="20.png" width="350" height="350">
+                        </div>
+
+                </div>
+
+                <div class="title">
+                        <div class="decor">
+                                <h1>
+                                        <center>Title Here</center>
+                                </h1>
+                                <h3>
+                                        <center>Lorem Ipsum available but the majority have
+                                                suffered alteration in some form, by injected
+                                                humour randomised words</center>
+                                </h3>
+                        </div>
+                        <div class="pic">
+                                <img src="2.png" width="200" height="200">
+                        </div>
+                        <div class="pic1">
+                                <img src="3.png" width="200" height="200">
+                        </div>
+                        <div class="pic2">
+                                <img src="4.png" width="200" height="200">
+                        </div>
+
+                        <button class="q">Buy Now</button>
+                        <button class="p">Buy Now</button>
+                        <button class="r">Buy Now</button>
+                </div>
+
+
+                <div class="loverAnimal">
+                        <div class="img">
+                                <img src="5.png" width="350" height="350">
+                        </div>
+                        <div class="sent">
+                                <h1>As a veterinarian and lover of animals.</h1>
+                                <p>Lorem Ipsum available but the majority have
+                                        suffered alteration in some form, by injected
+                                        humour randomised words.</p>
+                        </div>
+                        <button class="best">Our Services</button>
+                </div>
+
+                <div class="sale">
+                        <div class="dd">
+                                <h1>
+                                        <center>Title Here</center>
+                                </h1>
+                                <h3>
+                                        <center>Lorem Ipsum available but the majority have
+                                                suffered alteration in some form, by injected
+                                                humour randomised words</center>
+                                </h3>
+                        </div>
+                        <div class="img1">
+                                <img src="6.png" width="200" height="200">
+                        </div>
+                        <div class="img2">
+                                <img src="7.png" width="200" height="200">
+                        </div>
+                        <div class="img3">
+                                <img src="8.png" width="200" height="200">
+                        </div>
+                </div>
+
+
+                <div class="team">
+                        <h1>
+                                <center>The Vetcare Team</center>
+                        </h1>
+                        <h3>
+                                <center>Lorem Ipsum available but the majority have
+                                        suffered alteration in some form, by injected
+                                        humour randomised words</center>
+                        </h3>
+                        <div class="a">
+                                <img src="9.png" width="200" height="200">
+                        </div>
+                        <div class="b">
+                                <img src="10.png" width="200" height="200">
+                        </div>
+                        <div class="c">
+                                <img src="11.png" width="200" height="200">
+                        </div>
+                        <div class="name1">
+                                <h2>Jennifer Mullen</h2>
+                        </div>
+                        <div class="name2">
+                                <h2>Sheeren Collin's</h2>
+                        </div>
+                        <div class="name3">
+                                <h2>Jennifer Mullen</h2>
+                        </div>
+
+                </div>
+
+                <div class="clients">
+                        <div class="t">
+                                <img src="12.png" width="200" height="200">
+
+                        </div>
+                        <div class="f">
+                                <img src="13.png" width="200" height="200">
+
+                        </div>
+                        <div class="g">
+                                <img src="14.png" width="200" height="200">
+
+                        </div>
+                        <div class="name4">
+                                <h2>Happy Clients</h2>
+                        </div>
+                        <div class="name5">
+                                <h2>Department</h2>
+                        </div>
+                        <div class="name6">
+                                <h2>Vaccinations</h2>
+                        </div>
+                </div>
+                <div class="posts">
+                        <div class="great">
+                                <h1>
+                                        <center>Recent Posts</center>
+                                </h1>
+                                <h3>
+                                        <center>Lorem Ipsum available but the majority have
+                                                suffered alteration in some form, by injected
+                                                humour randomised words</center>
+                                </h3>
+                                <div class="s">
+                                        <img src="15.png" width="200" height="200">
+
+                                </div>
+                                <div class="d">
+                                        <img src="16.png" width="200" height="200">
+
+                                </div>
+                                <div class="j">
+                                        <img src="17.png" width="200" height="200">
+
+                                </div>
+                        </div>
+                </div>
+                <div class="footer">
+                        <div class="z">
+                                <i>
+                                        <h1>About</h1>
+                                        <br>
+                                        <h2>History</h2>
+
+                                        <h2>Our Team</h2>
+
+                                        <h2>Brand Guidlines</h2>
+
+                                        <h2>Terms & Conditions</h2>
+
+                                        <h2>Privacy Policy</h2>
+                                </i>
+                        </div>
+                        <div class="y">
+                                <i>
+                                        <h1>Services</h1>
+                                        <br>
+                                        <h2>How to Order </h2>
+
+                                        <h2>Our Product</h2>
+
+                                        <h2>Order Status</h2>
+
+                                        <h2>Promo</h2>
+
+                                        <h2>Payment Method</h2>
+                                </i>
+                        </div>
+                        <div class="x">
+                                <i>
+                                        <h2>
+                                                <left>Title Here</left>
+                                        </h2>
+                                        <p>Lorem Ipsum available,but the majorit</p>
+                                </i>
+                        </div>
+                        <div class="net">
+                                <img src="18.png" width="300" height="50">
+                                <br>
+                                <img src="19.png" width="200" height="50">
+                        </div>
+
+                </div>
+
+        </div>
+</body>
+
+</html>
